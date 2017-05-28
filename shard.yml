@@ -1,0 +1,9 @@
+name: mbedtls.cr
+version: 0.1.0
+
+authors:
+  - Michael Holmes <michael.holmes@protonmail.ch>
+
+crystal: 0.22.0
+
+license: MIT
