@@ -1,7 +1,25 @@
 # mbedtls.cr
 
 Crystal language bindings to the [mbed TLS](https://tls.mbed.org/) lightweight TLS and
-cryptography library, based on the [openssl.cr bindings]()
+cryptography library, based on the [openssl.cr bindings](https://github.com/datanoise/openssl.cr).
+
+In development, not yet stable.
+
+Implemented:
+
+* [x] Message digests (hashing)
+* [ ] HMAC authenticated digests
+* [ ] CSPRNG (cryptographic random numbers)
+* [ ] Symmetric encryption
+* [ ] Asymmetric encryption
+* [ ] X509 certificate utilities
+* [ ] TLS connection wrapping
+
+## Disclaimer
+
+Cryptography is hard. This library is not thoroughly tested; it might have flaws in it's bindings.
+As per the [terms of the license](https://github.com/ceph3us/mbedtls.cr), by using this you
+understand this is at your own risk.
 
 ## Installation
 
@@ -55,7 +73,7 @@ dependencies:
 
 ## Usage
 
-Full usage information is available in our documentation.
+Full usage information is available in the [documentation](http://ceph3.us/mbedtls.cr).
 
 ### Message Digests (hashing)
 
@@ -83,7 +101,7 @@ puts "The SHA256 hash of the file hello.txt is #{hash}"
 
 ## Development
 
-TODO: Write development instructions here
+If you have any suggestions or issues with the project, I'd be happy to listen to your concerns
 
 ## Contributing
 
