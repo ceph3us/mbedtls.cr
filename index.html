@@ -113,7 +113,19 @@
 <h1>mbedtls.cr</h1>
 
 <p>Crystal language bindings to the <a href="https://tls.mbed.org/" target="_blank">mbed TLS</a> lightweight TLS and
-cryptography library, based on the <a href="" target="_blank">openssl.cr bindings</a></p>
+cryptography library, based on the <a href="https://github.com/datanoise/openssl.cr" target="_blank">openssl.cr bindings</a>.</p>
+
+<p>In development, not yet stable.</p>
+
+<p>Implemented:</p>
+
+<ul><li>[x] Message digests (hashing)</li><li>[ ] HMAC authenticated digests</li><li>[ ] CSPRNG (cryptographic random numbers)</li><li>[ ] Symmetric encryption</li><li>[ ] Asymmetric encryption</li><li>[ ] X509 certificate utilities</li><li>[ ] TLS connection wrapping</li></ul>
+
+<h2>Disclaimer</h2>
+
+<p>Cryptography is hard. This library is not thoroughly tested; it might have flaws in it's bindings.
+As per the <a href="https://github.com/ceph3us/mbedtls.cr" target="_blank">terms of the license</a>, by using this you
+understand this is at your own risk.</p>
 
 <h2>Installation</h2>
 
@@ -162,7 +174,7 @@ suitable <code>mbedtls</code> packages.</p>
 
 <h2>Usage</h2>
 
-<p>Full usage information is available in our documentation.</p>
+<p>Full usage information is available in the <a href="http://ceph3.us/mbedtls.cr" target="_blank">documentation</a>.</p>
 
 <h3>Message Digests (hashing)</h3>
 
@@ -188,7 +200,7 @@ puts <span class="s">&quot;The SHA256 hash of the file hello.txt is </span><span
 
 <h2>Development</h2>
 
-<p><span class="flag orange">TODO</span>  Write development instructions here</p>
+<p>If you have any suggestions or issues with the project, I'd be happy to listen to your concerns</p>
 
 <h2>Contributing</h2>
 
