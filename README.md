@@ -101,7 +101,8 @@ puts "The SHA256 hash of the file hello.txt is #{hash}"
 
 ## Development
 
-If you have any suggestions or issues with the project, I'd be happy to listen to your concerns
+If you have any suggestions or issues with the project, I'd be happy to listen to your concerns.
+Post [a GitHub issue](https://github.com/ceph3us/mbedtls.cr/issues/new) so we can discuss them.
 
 ## Contributing
 
