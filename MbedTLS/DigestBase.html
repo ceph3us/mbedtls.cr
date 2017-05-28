@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/ceph3us/mbedtls.cr">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>MbedTLS::DigestBase - github.com/ceph3us/mbedtls.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/ceph3us/mbedtls.cr/MbedTLS" data-name="mbedtls">
+      <a href="../MbedTLS.html">MbedTLS</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest" data-name="mbedtls::digest">
+      <a href="../MbedTLS/Digest.html">Digest</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/DigestError" data-name="mbedtls::digest::digesterror">
+      <a href="../MbedTLS/Digest/DigestError.html">DigestError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/MD2" data-name="mbedtls::digest::md2">
+      <a href="../MbedTLS/Digest/MD2.html">MD2</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/MD4" data-name="mbedtls::digest::md4">
+      <a href="../MbedTLS/Digest/MD4.html">MD4</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/MD5" data-name="mbedtls::digest::md5">
+      <a href="../MbedTLS/Digest/MD5.html">MD5</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/RIPEMD160" data-name="mbedtls::digest::ripemd160">
+      <a href="../MbedTLS/Digest/RIPEMD160.html">RIPEMD160</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA1" data-name="mbedtls::digest::sha1">
+      <a href="../MbedTLS/Digest/SHA1.html">SHA1</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA224" data-name="mbedtls::digest::sha224">
+      <a href="../MbedTLS/Digest/SHA224.html">SHA224</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA256" data-name="mbedtls::digest::sha256">
+      <a href="../MbedTLS/Digest/SHA256.html">SHA256</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA384" data-name="mbedtls::digest::sha384">
+      <a href="../MbedTLS/Digest/SHA384.html">SHA384</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA512" data-name="mbedtls::digest::sha512">
+      <a href="../MbedTLS/Digest/SHA512.html">SHA512</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/Type" data-name="mbedtls::digest::type">
+      <a href="../MbedTLS/Digest/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/DigestBase" data-name="mbedtls::digestbase">
+      <a href="../MbedTLS/DigestBase.html">DigestBase</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/MbedTLSError" data-name="mbedtls::mbedtlserror">
+      <a href="../MbedTLS/MbedTLSError.html">MbedTLSError</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> MbedTLS::DigestBase
+
+</h1>
+
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>Describes common utility methods for working with message digests.</p>
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Direct including types</h2>
+  <ul class="other-types-list">
+  
+    <li class="other-type"><a href="../MbedTLS/Digest.html">MbedTLS::Digest</a></li>
+  
+  </ul>
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/ceph3us/mbedtls.cr/blob/e681e94002dbb73370bae4a59b320cc7a847fd5b/src/digest/digest_base.cr#L5" target="_blank">digest/digest_base.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#hexdump%28digest%29-class-method" class="signature"><strong>.hexdump</strong>(digest)</a>
+        
+          <div class="summary"><p>Utility method, converts a buffer slice to a hexadecimal representation.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#%3C%3C%28data%29-instance-method" class="signature"><strong>#<<</strong>(data)</a>
+        
+          <div class="summary"><p>Shorthand operator for <code><a href="../MbedTLS/DigestBase.html#update%28io%3AIO%29-instance-method">#update</a></code>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#base64digest-instance-method" class="signature"><strong>#base64digest</strong></a>
+        
+          <div class="summary"><p>Returns the Base64 encoded representation of the digest.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#digest-instance-method" class="signature"><strong>#digest</strong></a>
+        
+          <div class="summary"><p>Hash the buffer and return the raw bytes returned by the digest algorithm.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#file%28file_name%29-instance-method" class="signature"><strong>#file</strong>(file_name)</a>
+        
+          <div class="summary"><p>Utility method to read a file into the internal buffer of the <code><a href="../MbedTLS/Digest.html">Digest</a></code> instance.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#hexdigest-instance-method" class="signature"><strong>#hexdigest</strong></a>
+        
+          <div class="summary"><p>Returns the hexadecimal representation of the digest.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_s%28io%29-instance-method" class="signature"><strong>#to_s</strong>(io)</a>
+        
+          <div class="summary"><p>Converts digest instance to a string by creating it's hexadecimal representation.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#update%28io%3AIO%29-instance-method" class="signature"><strong>#update</strong>(io : IO)</a>
+        
+          <div class="summary"><p>Adds the contents of the <code>io</code> I/O buffer to the internal buffer of the <code><a href="../MbedTLS/Digest.html">Digest</a></code> instance.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="hexdump&#40;digest&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>hexdump</strong>(digest)
+
+        <a class="method-permalink" href="#hexdump%28digest%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Utility method, converts a buffer slice to a hexadecimal representation.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/ceph3us/mbedtls.cr/blob/e681e94002dbb73370bae4a59b320cc7a847fd5b/src/digest/digest_base.cr#L59" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="&lt;&lt;&#40;data&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong><<</strong>(data)
+
+        <a class="method-permalink" href="#%3C%3C%28data%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Shorthand operator for <code><a href="../MbedTLS/DigestBase.html#update%28io%3AIO%29-instance-method">#update</a></code>.
+You can chain the <code><a href="../MbedTLS/DigestBase.html#%3C%3C%28data%29-instance-method">#<<</a></code> operator to concatenate data into the
+internal buffer of the <code><a href="../MbedTLS/Digest.html">Digest</a></code> instance for hashing.</p>
+
+<pre><code><span class="k">require</span> <span class="s">&quot;mbedtls&quot;</span>
+digest <span class="o">=</span> <span class="t">MbedTLS</span><span class="t">::</span><span class="t">Digest</span><span class="t">::</span><span class="t">SHA256</span>.<span class="k">new</span>
+digest <span class="o"><<</span> <span class="s">&quot;Hello, world&quot;</span>
+puts <span class="s">&quot;SHA256&#40;Hello, world&#41; &#61; </span><span class="i">#{</span></span>digest<span class="s"><span class="i">}</span>&quot;</span></code></pre>
+
+<p>Output:</p>
+
+<pre><code class='language-plain'>SHA256(Hello, world) = 4ae7c3b6ac0beff671efa8cf57386151c06e58ca53a78d83f36107316cec125f</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/ceph3us/mbedtls.cr/blob/e681e94002dbb73370bae4a59b320cc7a847fd5b/src/digest/digest_base.cr#L39" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="base64digest-instance-method">
+      <div class="signature">
+        
+        def <strong>base64digest</strong>
+
+        <a class="method-permalink" href="#base64digest-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns the Base64 encoded representation of the digest.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/ceph3us/mbedtls.cr/blob/e681e94002dbb73370bae4a59b320cc7a847fd5b/src/digest/digest_base.cr#L49" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="digest-instance-method">
+      <div class="signature">
+        
+        def <strong>digest</strong>
+
+        <a class="method-permalink" href="#digest-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Hash the buffer and return the raw bytes returned by the digest algorithm.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/ceph3us/mbedtls.cr/blob/e681e94002dbb73370bae4a59b320cc7a847fd5b/src/digest/digest_base.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="file&#40;file_name&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>file</strong>(file_name)
+
+        <a class="method-permalink" href="#file%28file_name%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Utility method to read a file into the internal buffer of the
+<code><a href="../MbedTLS/Digest.html">Digest</a></code> instance.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/ceph3us/mbedtls.cr/blob/e681e94002dbb73370bae4a59b320cc7a847fd5b/src/digest/digest_base.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="hexdigest-instance-method">
+      <div class="signature">
+        
+        def <strong>hexdigest</strong>
+
+        <a class="method-permalink" href="#hexdigest-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Returns the hexadecimal representation of the digest.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/ceph3us/mbedtls.cr/blob/e681e94002dbb73370bae4a59b320cc7a847fd5b/src/digest/digest_base.cr#L54" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_s&#40;io&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>to_s</strong>(io)
+
+        <a class="method-permalink" href="#to_s%28io%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Converts digest instance to a string by creating it's hexadecimal representation.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/ceph3us/mbedtls.cr/blob/e681e94002dbb73370bae4a59b320cc7a847fd5b/src/digest/digest_base.cr#L68" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="update&#40;io:IO&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>update</strong>(io : IO)
+
+        <a class="method-permalink" href="#update%28io%3AIO%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Adds the contents of the <code>io</code> I/O buffer to the internal buffer
+of the <code><a href="../MbedTLS/Digest.html">Digest</a></code> instance.
+You can call <code><a href="../MbedTLS/DigestBase.html#update%28io%3AIO%29-instance-method">#update</a></code> until the buffer contains the full data for
+hashing; the contents of the buffer get appended with each call.</p></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/ceph3us/mbedtls.cr/blob/e681e94002dbb73370bae4a59b320cc7a847fd5b/src/digest/digest_base.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

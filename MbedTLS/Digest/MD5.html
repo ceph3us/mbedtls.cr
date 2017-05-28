@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/ceph3us/mbedtls.cr">
+  <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../../js/doc.js"></script>
+  <title>MbedTLS::Digest::MD5 - github.com/ceph3us/mbedtls.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/ceph3us/mbedtls.cr/MbedTLS" data-name="mbedtls">
+      <a href="../../MbedTLS.html">MbedTLS</a>
+      
+        <ul>
+  
+  <li class="parent open current" data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest" data-name="mbedtls::digest">
+      <a href="../../MbedTLS/Digest.html">Digest</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/DigestError" data-name="mbedtls::digest::digesterror">
+      <a href="../../MbedTLS/Digest/DigestError.html">DigestError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/MD2" data-name="mbedtls::digest::md2">
+      <a href="../../MbedTLS/Digest/MD2.html">MD2</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/MD4" data-name="mbedtls::digest::md4">
+      <a href="../../MbedTLS/Digest/MD4.html">MD4</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/MD5" data-name="mbedtls::digest::md5">
+      <a href="../../MbedTLS/Digest/MD5.html">MD5</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/RIPEMD160" data-name="mbedtls::digest::ripemd160">
+      <a href="../../MbedTLS/Digest/RIPEMD160.html">RIPEMD160</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA1" data-name="mbedtls::digest::sha1">
+      <a href="../../MbedTLS/Digest/SHA1.html">SHA1</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA224" data-name="mbedtls::digest::sha224">
+      <a href="../../MbedTLS/Digest/SHA224.html">SHA224</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA256" data-name="mbedtls::digest::sha256">
+      <a href="../../MbedTLS/Digest/SHA256.html">SHA256</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA384" data-name="mbedtls::digest::sha384">
+      <a href="../../MbedTLS/Digest/SHA384.html">SHA384</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA512" data-name="mbedtls::digest::sha512">
+      <a href="../../MbedTLS/Digest/SHA512.html">SHA512</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/Type" data-name="mbedtls::digest::type">
+      <a href="../../MbedTLS/Digest/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/DigestBase" data-name="mbedtls::digestbase">
+      <a href="../../MbedTLS/DigestBase.html">DigestBase</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/MbedTLSError" data-name="mbedtls::mbedtlserror">
+      <a href="../../MbedTLS/MbedTLSError.html">MbedTLSError</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> MbedTLS::Digest::MD5
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../MbedTLS/Digest/MD5.html">MbedTLS::Digest::MD5</a></li><li class="superclass"><a href="../../MbedTLS/Digest.html">MbedTLS::Digest</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>A binding to the mbed TLS implementation of the MD5 digest algorithm.</p>
+
+<p><span class="flag red">DEPRECATED</span>  The MD5 digest algorithm is no longer considered
+cryptographically secure. Restrict its use to backwards compatibile applications,
+and plan to halt its use entirely in the future.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+
+
+
+
+
+  <h2>Class Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#is_supported%3F-class-method" class="signature"><strong>.is_supported?</strong></a>
+        
+          <div class="summary"><p>Whether the linked libmbedcrypto supports the MD5 digest.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new-class-method" class="signature"><strong>.new</strong></a>
+        
+          <div class="summary"><p>Creates a new instance for hashing data with MD5.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#clone%3AMD5-instance-method" class="signature"><strong>#clone</strong> : MD5</a>
+        
+          <div class="summary"><p>Creates a new <code><a href="../../MbedTLS/Digest/MD5.html">MD5</a></code> instance with the same internal state.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#digest_size%3AUInt8-instance-method" class="signature"><strong>#digest_size</strong> : UInt8</a>
+        
+          <div class="summary"><p>The size of the digest's output, in bytes.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#md_type_of%3AType-instance-method" class="signature"><strong>#md_type_of</strong> : Type</a>
+        
+          <div class="summary"><p>The <code><a href="../../MbedTLS/Digest/Type.html">Type</a></code> enum of this Digest algorithm.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from class <code><a href="../../MbedTLS/Digest.html">MbedTLS::Digest</a></code></h3>
+  
+  
+    <a href="../../MbedTLS/Digest.html#base64digest%21-instance-method" class="tooltip">
+      <span>base64digest!</span>
+    base64digest!</a>, 
+    
+  
+    <a href="../../MbedTLS/Digest.html#clone%3ADigest-instance-method" class="tooltip">
+      <span>clone : Digest</span>
+    clone</a>, 
+    
+  
+    <a href="../../MbedTLS/Digest.html#digest%21-instance-method" class="tooltip">
+      <span>digest!</span>
+    digest!</a>, 
+    
+  
+    <a href="../../MbedTLS/Digest.html#digest_size%3AUInt8-instance-method" class="tooltip">
+      <span>digest_size : UInt8</span>
+    digest_size</a>, 
+    
+  
+    <a href="../../MbedTLS/Digest.html#finalize-instance-method" class="tooltip">
+      <span>finalize</span>
+    finalize</a>, 
+    
+  
+    <a href="../../MbedTLS/Digest.html#hexdigest%21-instance-method" class="tooltip">
+      <span>hexdigest!</span>
+    hexdigest!</a>, 
+    
+  
+    <a href="../../MbedTLS/Digest.html#md_type_of%3AType-instance-method" class="tooltip">
+      <span>md_type_of : Type</span>
+    md_type_of</a>, 
+    
+  
+    <a href="../../MbedTLS/Digest.html#name%3AString-instance-method" class="tooltip">
+      <span>name : String</span>
+    name</a>, 
+    
+  
+    <a href="../../MbedTLS/Digest.html#reset-instance-method" class="tooltip">
+      <span>reset</span>
+    reset</a>, 
+    
+  
+    <a href="../../MbedTLS/Digest.html#to_unsafe%3APointer%28LibMbedCrypto%3A%3AMDContext%29-instance-method" class="tooltip">
+      <span>to_unsafe : Pointer(LibMbedCrypto::MDContext)</span>
+    to_unsafe</a>, 
+    
+  
+    <a href="../../MbedTLS/Digest.html#update%28data%3AString%7CSlice%29-instance-method" class="tooltip">
+      <span>update(data : String | Slice)</span>
+    update</a>
+    
+  
+
+
+    
+
+  <h3>Class methods inherited from class <code><a href="../../MbedTLS/Digest.html">MbedTLS::Digest</a></code></h3>
+  
+  
+    <a href="../../MbedTLS/Digest.html#supported_types-class-method" class="tooltip">
+      <span>supported_types</span>
+    supported_types</a>
+    
+  
+
+
+  
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+  
+    
+
+  <h3>Instance methods inherited from module <code><a href="../../MbedTLS/DigestBase.html">MbedTLS::DigestBase</a></code></h3>
+  
+  
+    <a href="../../MbedTLS/DigestBase.html#%3C%3C%28data%29-instance-method" class="tooltip">
+      <span><<(data)</span>
+    <<</a>, 
+    
+  
+    <a href="../../MbedTLS/DigestBase.html#base64digest-instance-method" class="tooltip">
+      <span>base64digest</span>
+    base64digest</a>, 
+    
+  
+    <a href="../../MbedTLS/DigestBase.html#digest-instance-method" class="tooltip">
+      <span>digest</span>
+    digest</a>, 
+    
+  
+    <a href="../../MbedTLS/DigestBase.html#file%28file_name%29-instance-method" class="tooltip">
+      <span>file(file_name)</span>
+    file</a>, 
+    
+  
+    <a href="../../MbedTLS/DigestBase.html#hexdigest-instance-method" class="tooltip">
+      <span>hexdigest</span>
+    hexdigest</a>, 
+    
+  
+    <a href="../../MbedTLS/DigestBase.html#to_s%28io%29-instance-method" class="tooltip">
+      <span>to_s(io)</span>
+    to_s</a>, 
+    
+  
+    <a href="../../MbedTLS/DigestBase.html#update%28io%3AIO%29-instance-method" class="tooltip">
+      <span>update(io : IO)</span>
+    update</a>
+    
+  
+
+
+    
+
+  <h3>Class methods inherited from module <code><a href="../../MbedTLS/DigestBase.html">MbedTLS::DigestBase</a></code></h3>
+  
+  
+    <a href="../../MbedTLS/DigestBase.html#hexdump%28digest%29-class-method" class="tooltip">
+      <span>hexdump(digest)</span>
+    hexdump</a>
+    
+  
+
+
+  
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Class Method Detail</h2>
+  
+    <div class="entry-detail" id="is_supported?-class-method">
+      <div class="signature">
+        
+        def self.<strong>is_supported?</strong>
+
+        <a class="method-permalink" href="#is_supported%3F-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Whether the linked libmbedcrypto supports the MD5 digest.</p></div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>
+
+        <a class="method-permalink" href="#new-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Creates a new instance for hashing data with MD5.
+Raises a <code><a href="../../MbedTLS/Digest/DigestError.html">DigestError</a></code> if the linked copy of libmbedcrypto was not
+compiled with support for the MD5 digest algorithm.</p></div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="clone:MD5-instance-method">
+      <div class="signature">
+        
+        def <strong>clone</strong> : <a href="../../MbedTLS/Digest/MD5.html">MD5</a>
+
+        <a class="method-permalink" href="#clone%3AMD5-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Creates a new <code><a href="../../MbedTLS/Digest/MD5.html">MD5</a></code> instance with the same internal state.
+Raises a <code><a href="../../MbedTLS/Digest/DigestError.html">DigestError</a></code> if a library issue happens during the clone operation.</p></div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="digest_size:UInt8-instance-method">
+      <div class="signature">
+        
+        def <strong>digest_size</strong> : UInt8
+
+        <a class="method-permalink" href="#digest_size%3AUInt8-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>The size of the digest's output, in bytes.
+This is the size of the raw digest, not it's hex representation.</p></div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="md_type_of:Type-instance-method">
+      <div class="signature">
+        
+        def <strong>md_type_of</strong> : <a href="../../MbedTLS/Digest/Type.html">Type</a>
+
+        <a class="method-permalink" href="#md_type_of%3AType-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>The <code><a href="../../MbedTLS/Digest/Type.html">Type</a></code> enum of this Digest algorithm.</p></div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

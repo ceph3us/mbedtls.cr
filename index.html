@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/ceph3us/mbedtls.cr">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/doc.js"></script>
+  <title>README - github.com/ceph3us/mbedtls.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li class="current"><a href="index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS" data-name="mbedtls">
+      <a href="MbedTLS.html">MbedTLS</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest" data-name="mbedtls::digest">
+      <a href="MbedTLS/Digest.html">Digest</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/DigestError" data-name="mbedtls::digest::digesterror">
+      <a href="MbedTLS/Digest/DigestError.html">DigestError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/MD2" data-name="mbedtls::digest::md2">
+      <a href="MbedTLS/Digest/MD2.html">MD2</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/MD4" data-name="mbedtls::digest::md4">
+      <a href="MbedTLS/Digest/MD4.html">MD4</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/MD5" data-name="mbedtls::digest::md5">
+      <a href="MbedTLS/Digest/MD5.html">MD5</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/RIPEMD160" data-name="mbedtls::digest::ripemd160">
+      <a href="MbedTLS/Digest/RIPEMD160.html">RIPEMD160</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA1" data-name="mbedtls::digest::sha1">
+      <a href="MbedTLS/Digest/SHA1.html">SHA1</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA224" data-name="mbedtls::digest::sha224">
+      <a href="MbedTLS/Digest/SHA224.html">SHA224</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA256" data-name="mbedtls::digest::sha256">
+      <a href="MbedTLS/Digest/SHA256.html">SHA256</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA384" data-name="mbedtls::digest::sha384">
+      <a href="MbedTLS/Digest/SHA384.html">SHA384</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/SHA512" data-name="mbedtls::digest::sha512">
+      <a href="MbedTLS/Digest/SHA512.html">SHA512</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/Digest/Type" data-name="mbedtls::digest::type">
+      <a href="MbedTLS/Digest/Type.html">Type</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/DigestBase" data-name="mbedtls::digestbase">
+      <a href="MbedTLS/DigestBase.html">DigestBase</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/ceph3us/mbedtls.cr/MbedTLS/MbedTLSError" data-name="mbedtls::mbedtlserror">
+      <a href="MbedTLS/MbedTLSError.html">MbedTLSError</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1>mbedtls.cr</h1>
+
+<p>Crystal language bindings to the <a href="https://tls.mbed.org/" target="_blank">mbed TLS</a> lightweight TLS and
+cryptography library, based on the <a href="" target="_blank">openssl.cr bindings</a></p>
+
+<h2>Installation</h2>
+
+<p>You must install mbed TLS for your platform.</p>
+
+<p>I test mbedtls.cr with mbed TLS 2.4.2. Other versions could work, but they are not tested.
+You can file a Pull Request on this Readme if you succeed in getting it to work with other
+versions. It won't work with mbed TLS versions before 2.0, or PolarSSL.</p>
+
+<p><em>Please note:</em> Versions of mbed TLS before 2.1 are under the GPL2 licence, and your
+distribution may bundle the GPL2 licensed version. If you need to redistribute the mbed
+TLS library with your project, consider downloading and building the Apache licensed version.
+The project is the same, it has Apache license headers and files replacing the GPL ones.</p>
+
+<h3>Installing mbed TLS</h3>
+
+<p>macOS:</p>
+
+<pre><code class='language-shell'>brew install mbedtls</code></pre>
+
+<p>Ubuntu/Debian</p>
+
+<pre><code class='language-shell'>brew install libmbedtls libmbedtls-dev</code></pre>
+
+<p>Fedora/CentOS</p>
+
+<pre><code class='language-shell'>yum install mbedtls mbedtls-devel</code></pre>
+
+<p><em>Note:</em> You need Fedora 22+ for a 2.x mbed version.
+CentOS and RHEL 6/7 users will need to use <a href="https://fedoraproject.org/wiki/EPEL" target="_blank">EPEL</a> for
+suitable <code>mbedtls</code> packages.</p>
+
+<p>Arch Linux</p>
+
+<pre><code class='language-shell'>pacman -S mbedtls</code></pre>
+
+<p><a href="https://wiki.archlinux.org/index.php/System_maintenance#Partial_upgrades_are_unsupported" target="_blank">Never use pacman -Sy when installing packages!</a></p>
+
+<h3>Using in your project or package</h3>
+
+<p>Add this to your application's <code>shard.yml</code>:</p>
+
+<pre><code class='language-yaml'>dependencies:
+  mbedtls:
+    github: ceph3us/mbedtls.cr</code></pre>
+
+<h2>Usage</h2>
+
+<p>Full usage information is available in our documentation.</p>
+
+<h3>Message Digests (hashing)</h3>
+
+<pre><code class='language-crystal'><span class="k">require</span> <span class="s">&quot;mbedtls&quot;</span>
+
+hash <span class="o">=</span> <span class="t">MbedTLS</span><span class="t">::</span><span class="t">Digest</span><span class="t">::</span><span class="t">SHA256</span>.<span class="k">new</span>
+
+<span class="c"># You can hash a whole string...</span>
+hash <span class="o"><<</span> <span class="s">&quot;Hello, world&quot;</span>
+puts <span class="s">&#37;&#40;The SHA256 hash of &quot;Hello, world&quot; is </span><span class="i">#{</span></span>hash<span class="s"><span class="i">}</span>&#41;</span>
+
+hash.reset
+
+<span class="c"># ...or some concatenated strings...</span>
+hash <span class="o"><<</span> <span class="s">&quot;Hello, &quot;</span> <span class="o"><<</span> <span class="s">&quot;world&quot;</span>
+puts <span class="s">&#37;&#40;The SHA256 hash of &quot;Hello, world&quot; is </span><span class="i">#{</span></span>hash<span class="s"><span class="i">}</span>&#41;</span>
+
+hash.reset
+
+<span class="c"># ...or even a file&#33;</span>
+hash.file(<span class="s">&quot;hello.txt&quot;</span>)
+puts <span class="s">&quot;The SHA256 hash of the file hello.txt is </span><span class="i">#{</span></span>hash<span class="s"><span class="i">}</span>&quot;</span></code></pre>
+
+<h2>Development</h2>
+
+<p><span class="flag orange">TODO</span>  Write development instructions here</p>
+
+<h2>Contributing</h2>
+
+<p>mbedtls.cr uses the <a href="https://docs.gitlab.com/ee/workflow/gitlab_flow.html" target="_blank">GitLab flow</a> for repositories. To contribute:</p>
+
+<ol><li><a href="https://github.com/ceph3us/mbedtls.cr/fork" target="_blank">Fork it</a>!</li><li>Create your feature branch (git checkout -b my-new-feature)</li><li>Commit your changes (git commit -am 'Add some feature')</li><li>Push to the branch (git push origin my-new-feature)</li><li><a href="https://github.com/ceph3us/mbedtls.cr/compare" target="_blank">Submit a new Pull Request</a> with your changes.</li></ol>
+
+<p>If you do this a lot, consider the awesome <a href="http://www.git-town.com/" target="_blank">Git Town</a> which has lots of handy
+shortcuts for the GitLab flow and other Git workflows.</p>
+
+<h2>Contributors</h2>
+
+<ul><li><a href="https://github.com/ceph3us" target="_blank">ceph3us</a> Michael Holmes - creator, maintainer</li></ul>
+</div>
+</body>
+</html>
