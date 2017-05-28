@@ -1,0 +1,14 @@
+/doc/
+/lib/
+/bin/
+/src/
+/spec/
+*.yml
+/.shards/
+*.sublime-workspace
+README.md
+LICENSE
+
+# Libraries don't need dependency lock
+# Dependencies will be locked in application that uses them
+/shard.lock
